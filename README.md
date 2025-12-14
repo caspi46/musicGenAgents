@@ -76,7 +76,10 @@ The **Producer Agent** communicates with all agents and coordinates the workflow
 *   `-`: Represents the note (sustain/hold)
 *   `.`: Represents a rest (no note)
 
-## Limitations
+## User Interface 
+I'm thinking of deciding between gradio or CLI format: mg (???)
 
+## Limitations
+Since this is a small project during winter break: 
 1.  Music duration is fixed to **30 seconds**.
 2.  **Limited Instruments**: piano, guitar, bass, and drums (for now).
