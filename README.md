@@ -2,6 +2,21 @@
 
 Fun winter project for multi-agent system to generate short music (30 sec).
 
+## Current Status 
+### TODO: 
+- Identify the clear roles of each agent 
+- Identify the clear constraints of each agent 
+- Identify the sequence of generation (!!!)
+- Check specific API to generate music: Gemini Music API
+
+### Current Implementation
+- Constraints: genre, mood, instruments, notes 
+- Agents: 
+    - Composer Agent: Generates the main melody and chords.
+    - Arranger Agent: Arranges the music from the composer.
+    - Producer Agent: Orchestrator of the system.
+- Sequence: producer -> composer -> arranger -> producer (Should be more specific and detailed)
+
 ## Project Overview
 
 This project implements a multi-agent system for music generation using **LangChain** and **LangGraph**.
