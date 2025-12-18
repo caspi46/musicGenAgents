@@ -1,9 +1,19 @@
 from pydantic import BaseModel
 from typing import List 
-from .constraints import MUSIC_GENRES 
+from .constraints import Genre, Tempo, Mood, Key, Instrument
 
 class SongRequirements(BaseModel): 
-    genre: str
-    tempo: int 
-    mood: str 
-    pass 
+    genre: List[Genre]
+    tempo: Tempo 
+    mood: List[Mood]
+    key: Key
+
+class Track(BaseModel):
+    instrument: Instrument
+    notes: List[str] 
+    audio_file_path: str
+
+class Song(BaseModel):
+    tracks: List[Track]
+    requirements: SongRequirements
+    total_duration: int 
